@@ -1,0 +1,89 @@
+/**app.wxss**/
+/* #e50012 rgb(229,1,18) */
+
+/* page背景颜色 #eeeeee */
+page {background: #eeeeee;}
+.bgWhite {background: white;}
+
+
+/* 薄荷绿 #72d2d1 rgb(114,210,209) */
+.basebg {background: #72d2d1; color: #fff;}
+.basecolor {background: #fff; color: #72d2d1;}
+
+/* @import "font-awesome.wxss";
+@import "font-elegant.wxss";
+@import "font-icomoon.wxss"; */
+
+
+button.btn {background: #fff; padding: 0; font-size: 100%; line-height: 100%; border-radius: 0;}
+button.btn::after {display: none;}
+button.btn.button-hover {background-color: #ffffff;}
+
+
+.clearfix:before, .clearfix:after {content: ""; display: table;}
+.clearfix:after {clear: both;}
+
+
+.PUBLICONTAINER {padding: 20rpx;}
+.PUBLICONTAINER > .CON {background: white; padding: 30rpx 20rpx; border-radius: 16rpx; margin-bottom: 20rpx;}
+.PUBLICONTAINER > .CON {box-shadow: 0 5rpx 12rpx rgb(225, 225, 225);}
+
+
+
+
+.SECTION > .HEAD,
+.SECTION > .BODY {margin: 0 20rpx; position: relative;}
+.SECTION > .HEAD {height: 80rpx;}
+.SECTION > .HEAD > view {position: absolute; bottom: 10rpx;}
+.SECTION > .HEAD > .title {font-size: 120%;}
+.SECTION > .HEAD > .more {right: 0; font-size: 95%; opacity: .7;}
+
+.discounts {display: -webkit-flex; display: flex; flex-flow: row wrap;}
+.discounts > view {display: -webkit-flex; display: flex;}
+.discounts > view::before {width: 30rpx; height: 30rpx; content: "";}
+.discounts > view::after {font-size: 80%; padding-left: 4rpx; color: rgb(229,1,18);}
+.discounts > .miaosha::before {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/xianshimiaosha.png) no-repeat; background-size: 100% auto;}
+.discounts > .miaosha::after {content: "限时秒杀";}
+.discounts > .temai::before {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/temai.png) no-repeat; background-size: 100% auto;}
+.discounts > .temai::after {content: "特卖商品";}
+.discounts > .dingzhi::before {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/dingzhi.png) no-repeat; background-size: 100% auto;}
+.discounts > .dingzhi::after {content: "窗帘定制";}
+
+/* 瀑布流两列布局 */
+/* .ITEMLIST {-webkit-column-count: 2; column-count: 2; display: inline-block;} */
+/* 设置列间距 */
+/* .ITEMLIST > .item {-webkit-column-gap: 5rpx; column-gap: 5rpx; margin-bottom: 30rpx; -webkit-column-break-inside: avoid;} */
+/* .ITEMLIST > .item {float: left; width: 48%; margin-bottom: 4%;}
+.ITEMLIST > .item:nth-child(even) {margin-left: 4%;} */
+/* .ITEMLIST > .item {background: white; box-shadow: 0 0 20rpx #ccc; border-radius: 8rpx; overflow: hidden;} */
+
+/* .ITEMLIST {background: red;} */
+.ITEMLIST {display: -webkit-flex; display: flex; justify-content: space-between;}
+.ITEMLIST > .row {width: 48.5%;}
+.ITEMLIST > .row > .item {background: white; box-shadow: 0 0 20rpx #ccc; border-radius: 8rpx; overflow: hidden;}
+.ITEMLIST > .row > .item {margin-top: 25rpx;}
+
+/* mode="widthFix" 宽度100%，高度自适应 */
+.ITEMLIST > .row > .item > image {width: 100%;}
+.ITEMLIST > .row > .item > .txt {padding: 20rpx;}
+.ITEMLIST > .row > .item > .txt > view {margin-top: 15rpx;}
+.ITEMLIST > .row > .item > .txt > view:first-child {margin-top: 0;}
+.ITEMLIST > .row > .item > .txt > .discounts > view {margin-top: 15rpx; margin-right: 15rpx;}
+.ITEMLIST > .row > .item > .txt > .title {display: -webkit-box; display: box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}
+.ITEMLIST > .row > .item > .txt > .title {font-size: 95%; line-height: 40rpx;}
+.ITEMLIST > .row > .item > .txt > .prices {display: -webkit-flex; display: flex; justify-content: space-between; align-items: center}
+.ITEMLIST > .row > .item > .txt > .prices .price {color: #e50012;}
+.ITEMLIST > .row > .item > .txt > .prices .price text:first-child {font-size: 60%;}
+.ITEMLIST > .row > .item > .txt > .prices .price text:last-child {font-size: 130%;}
+.ITEMLIST > .row > .item > .txt > .prices .btn {height: 50rpx; line-height: 46rpx; border-radius: 25rpx; background: #e50012; color: white; padding: 0 15rpx;}
+.ITEMLIST > .row > .item > .txt > .prices .btn text {font-size: 75%;}
+
+.FORM {padding: 20rpx; background: #fff;}
+.FORM .border {border:1px #ddd solid; border-radius: 8rpx;}
+.FORM input {height: 80rpx; padding: 0 20rpx;}
+.FORM textarea {width: 94%; padding: 2% 2.5%;}
+
+.FORM .part {margin-bottom: 30rpx;}
+.FORM .part .name {margin-bottom: 12rpx;}
+
+

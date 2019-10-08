@@ -1,0 +1,114 @@
+<!--pages/item/detail/detail.wxml-->
+
+<!-- 产品主图 -->
+<view class="THEITEM">
+  <view class="image">
+    <image mode="widthFix" src="{{ detail.image }}" />
+  </view>
+  <view class="infos">
+    <view class="prices">
+      <view class="discount"><text>￥</text><text>{{ detail.zkPrice }}</text></view>
+      <view class="original"><text>原价</text><text>￥{{ detail.price }}</text></view>
+    </view>
+    <view class="discounts" wx:if="{{false}}">
+      <block wx:for="{{ detail.discountType }}" wx:key="item">
+        <view class="{{item}}"></view>
+      </block>
+    </view>
+    <view class="title">
+      <text>{{ detail.title }}</text>
+    </view>
+    <view class="zs">
+      <view>
+        <view class="btn zan {{zan.ed}}">
+          <view class="icon"></view>
+          <view class="txt">{{zan.count ? zan.count+'人赞过' : '赞'}}</view>
+        </view>
+      </view>
+      <view>
+        <button class="btn share" open-type="share">
+          <view class="icon"></view>
+          <text class="txt">分享</text>
+        </button>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="SECTION" wx:if="{{false}}">
+  <view class="PART">
+    <view class="infoList">
+
+      <view class="info">
+        <view class="tit">发货</view>
+        <view class="con delivery flex">
+          <view class="icon"></view>
+          <view>克拉玛依</view>
+        </view>
+      </view>
+
+      <view class="info">
+        <view class="tit">服务</view>
+        <view class="con">上门安装</view>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+
+<view class="SECTION" wx:if="detailContent">
+  <view class="PART">
+    <view class="detail-title">产品详情：</view>
+    <view class="detail-contain">
+      <rich-text nodes="{{detailContent}}"></rich-text>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="POP" wx:if="{{popShow}}">
+  <view class="bg" bindtap="hidePopClick" data-pophidetype="popbg"></view>
+  <view class="contain">
+    <view class="con">
+      <view class="pop-head">
+        <view class="title">选择颜色</view>
+        <view class="closeBtn" bindtap="hidePopClick" data-pophidetype="closeBtn">×</view>
+      </view>
+      <view class="pop-list clearfix">
+        <block wx:for="{{colorList}}" wx:key="item.value">
+        <view class="pop-item {{item.checked ? 'checked' : ''}}" data-value="{{item.value}}" bindtap="popItemClick">{{item.value}}</view>
+        </block>
+      </view>
+      <view class="pop-button">
+        <view class="button" bindtap="hidePopClick" data-pophidetype="confirm">确定</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<fixed-bottom wx:if="{{false}}">
+  <view class="fixed-bottom-buttons">
+    <view>
+      <view class="button cart" bindtap="showPopClick" data-popshowtype="cart"><text>加入购物车</text></view>
+    </view>
+    <view>
+      <view class="button order" bindtap="showPopClick" data-popshowtype="order"><text>立即购买</text></view>
+    </view>
+  </view>
+</fixed-bottom>
+
+
+
+
+
+
+
+
+

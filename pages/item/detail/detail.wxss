@@ -1,0 +1,72 @@
+/* pages/item/detail/detail.wxss */
+
+.THEITEM > .image image {width: 100%; display: block;}
+.THEITEM > .infos {padding: 20rpx; background: white;}
+
+.THEITEM > .infos > .prices {display: -webkit-flex; display: flex; align-items: flex-end;}
+.THEITEM > .infos > .prices > view {margin-right: 20rpx;}
+.THEITEM > .infos > .prices > .discount > text {color: #e50012;}
+.THEITEM > .infos > .prices > .discount > text:nth-of-type(2) {font-size: 150%;}
+.THEITEM > .infos > .prices > .original > text {opacity: .5;}
+.THEITEM > .infos > .prices > .original > text:nth-of-type(2) {text-decoration: line-through;}
+
+.THEITEM > .infos > .discounts {margin-top: 20rpx;}
+.THEITEM > .infos > .discounts > view {margin-right: 20rpx;}
+.THEITEM > .infos > .discounts > view::before {width: 36rpx; height: 36rpx;}
+.THEITEM > .infos > .discounts > view::after {font-size: 95%; padding-left: 6rpx;}
+
+.THEITEM > .infos > .title {margin-top: 20rpx; line-height: 45rpx; font-size: 110%; font-weight: bold;}
+
+.THEITEM > .infos > .zs {display: -webkit-flex; display: flex;}
+.THEITEM > .infos > .zs > view {flex: 1; height: 80rpx;}
+.THEITEM > .infos > .zs > view {display: -webkit-flex; display: flex; justify-content: center; align-items: center;}
+.THEITEM > .infos > .zs > view > .btn {display: -webkit-flex; display: flex; align-items: center;}
+.THEITEM > .infos > .zs > view > .btn > .icon {width: 36rpx; height: 36rpx;}
+.THEITEM > .infos > .zs > view > .btn > .txt {font-size: 95%; color: #999; margin-left: 10rpx;}
+.THEITEM > .infos > .zs > view > .btn.zan > .icon {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/zan.png) left top no-repeat;}
+.THEITEM > .infos > .zs > view > .btn.zan > .icon {background-size: auto 100%;}
+.THEITEM > .infos > .zs > view > .btn.zan > .icon {background-position: 0 0;}
+.THEITEM > .infos > .zs > view > .btn.zan.ed > .icon {background-position: 100% 0;}
+.THEITEM > .infos > .zs > view > .btn.zan.ed > .txt {color: #e50012;}
+.THEITEM > .infos > .zs > view > .btn.share > .icon {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/share.png) center;}
+.THEITEM > .infos > .zs > view > .btn.share > .icon {background-size: auto 100%;}
+
+
+.SECTION {background: white; margin-top: 15rpx; padding: 0 20rpx;}
+.SECTION > .PART {padding: 15rpx 0;}
+.SECTION .infoList > .info {display: -webkit-flex; display: flex;}
+.SECTION .infoList > .info > view {height: 60rx; line-height: 60rpx; font-size: 95%;}
+.SECTION .infoList > .info > view:first-child {padding-right: 30rpx; color: #999;}
+.SECTION .detail-title {margin-bottom: 30rpx; font-weight: bold;}
+
+
+
+.fixed-bottom-buttons {display: -webkit-flex; display: flex; height: 100%; align-items: center;}
+.fixed-bottom-buttons > view {flex: 1;}
+.fixed-bottom-buttons .button {height: 70rpx; line-height: 70rpx; text-align: center; color: white;}
+.fixed-bottom-buttons .button.cart {background: orange; border-top-left-radius: 35rpx; border-bottom-left-radius: 35rpx;}
+.fixed-bottom-buttons .button.order {background: #e50012; border-top-right-radius: 35rpx; border-bottom-right-radius: 35rpx;}
+
+
+
+.POP {position: fixed; z-index: 10; width: 100%; height: 100%; left: 0; top: 0;}
+.POP > view {position: absolute; width: 100%; left: 0;}
+.POP > view.bg {z-index: 1;}
+.POP > view.contain {z-index: 2;}
+.POP > .bg {height: 100%; top: 0; background: rgba(0, 0, 0, .85);}
+.POP > .contain {bottom: 0;}
+.POP > .contain > .con {background: white; padding: 20rpx 30rpx; border-top-left-radius: 15rpx; border-top-right-radius: 15rpx;}
+
+
+.POP .pop-head {display: -webkit-flex; display: flex; justify-content: space-between;}
+.POP .pop-head > .closeBtn {font-size: 150%;}
+
+.POP .pop-list {max-height: 400rpx; overflow-y: scroll; margin-top: 20rpx;}
+.POP .pop-list > .pop-item {float: left; margin-right: 20rpx; margin-bottom: 20rpx; border-radius: 6rpx;}
+.POP .pop-list > .pop-item {height: 50rpx; line-height: 50rpx; border: 1px #999 solid; color: #999; padding: 0 25rpx;}
+.POP .pop-list > .pop-item.checked {border: 1px #e50012 solid; color: #e50012;}
+
+
+.POP .pop-button > .button {height: 60rpx; line-height: 60rpx; border-radius: 30rpx; text-align: center;}
+.POP .pop-button > .button {background: #e50012; color: white;}
+

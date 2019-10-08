@@ -1,0 +1,21 @@
+<!--pages/morning-list/morning-list.wxml-->
+<view class="morningList">
+  <block wx:for="{{ list }}" wx:key="item.id">
+    <view class="item">
+      <view class="icon clock"></view>
+      <view class="icon good {{item.good}}"></view>
+      <view class="txt">
+        <view class="date">{{ item.date }} {{ item.week }}</view>
+        <view class="time">起床时间：{{ item.hms }}</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="noList" wx:if="{{!totalCount}}">
+  <view class="text">暂无打卡记录</view>
+  <navigator url="/pages/index/index" open-type="reLaunch">
+    <button type="warn">返回首页打卡</button>
+  </navigator>
+</view>
+

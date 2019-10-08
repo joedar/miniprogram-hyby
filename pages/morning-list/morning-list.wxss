@@ -1,0 +1,27 @@
+/* pages/morning-list/morning-list.wxss */
+
+/* font-family: awesome; content: "\";*/
+/* 时间 f017 */
+/* 大拇指 f087 / yea手势 f25b */
+
+
+.morningList > .item {position: relative;  height: 160rpx; border-top: 1px #eee solid;}
+.morningList > .item:first-child {border-top: none;}
+.morningList > .item > view {position: absolute; top: 50%; transform: translateY(-50%);}
+.morningList > .item > .icon {top: 45%; width: 50rpx; height: 50rpx; }
+
+.morningList > .item > .icon.clock {left: 30rpx;}
+.morningList > .item > .icon.clock {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/clock.png) no-repeat; background-size: 100% auto;}
+
+.morningList > .item > .icon.good {right: 30rpx;}
+.morningList > .item > .icon.good.green {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/good-left-green.png) no-repeat; background-size: 100% auto;}
+.morningList > .item > .icon.good.orange {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/good-left-orange.png) no-repeat; background-size: 100% auto;}
+.morningList > .item > .icon.good.red {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/good-left-red.png) no-repeat; background-size: 100% auto;}
+
+.morningList > .item > .txt {left: 110rpx;}
+.morningList > .item > .txt > .date {font-size: 110%; margin-bottom: 12rpx;}
+.morningList > .item > .txt > .time {font-size: 95%; opacity: .6;}
+
+
+.noList > .text {height: 500rpx; line-height: 500rpx; text-align: center; font-size: 120%; opacity: .4;}
+

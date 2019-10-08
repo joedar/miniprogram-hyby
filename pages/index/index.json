@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "morning": "/components/morning/morning",
+    "index-block-menu": "/components/index-block-menu/index-block-menu"
+  },
+  "navigationBarTitleText": "好运布艺首页"
+}

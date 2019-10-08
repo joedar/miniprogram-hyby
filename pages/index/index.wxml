@@ -1,0 +1,73 @@
+<!--pages/index/index.wxml-->
+<swiper class="banner-swiper">
+  <block wx:for="{{SwiperImageList}}" wx:key="{{item.id}}">
+    <swiper-item>
+      <image class="bannerImg" src="{{item.image}}" mode="aspectFill"></image>
+    </swiper-item>
+  </block>  
+</swiper>
+
+<!-- 早起打卡组件 -->
+<block>
+  <morning bind:tap="goMorningClick" />
+</block>
+
+<index-block-menu />
+
+<!-- 限时秒杀 | 精品特卖 | 量身定制 | 更多 -->
+<!-- <view class="iconbuttons bgWhite">
+  <view class="box">
+    <view class="item"><icon class="miaosha"></icon><text>限时秒杀</text></view>
+    <view class="item"><icon class="temai"></icon><text>特卖商品</text></view>
+    <view class="item"><icon class="dingzhi"></icon><text>窗帘定制</text></view>
+    <view class="item"><icon class="more"></icon><text>商品分类</text></view>
+  </view>
+</view> -->
+
+
+<view style="display: none;">
+  <block wx:for="{{dataList}}" wx:key="{{item.id}}">
+    <image
+      src="{{item.image}}"
+      id="{{item.id}}"
+      data-id="{{item.id}}"
+      data-title="{{item.title}}"
+      data-image="{{item.image}}"
+      mode="widthFix"
+      bindload="onImageLoad"
+    ></image>
+  </block>
+</view>
+<!-- 窗帘推荐 -->
+<view class="SECTION">
+  <view class="HEAD">
+    <view class="title">推荐商品</view>
+    <view class="more">
+      <navigator url="/pages/item/list/list">查看更多</navigator>
+    </view>
+  </view>
+  <view class="BODY">
+    <view class="ITEMLIST">
+      <view class="row" wx:for="{{list}}" wx:key="index">
+        <view class="item" wx:for="{{item}}" wx:for-index="idx" wx:for-item="items" wx:key="items">
+          <image src="{{items.image}}" mode="widthFix"></image>
+          <view class="txt">
+            <view class="discounts clearfix" wx:if="{{false}}" data-if="items.discountType">
+              <block wx:for="{{items.discountType}}" wx:for-index="idx" wx:for-items="discount" wx:key="discount">
+              <view class="{{discount}}"></view>
+              </block>
+            </view>
+            <view class="title">{{items.title}}</view>
+            <!-- <view class="prices">
+              <view class="price"><text>￥</text><text>{{items.zkPrice}}</text></view>
+              <view class="btn"><text>查看详情</text></view>
+            </view> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

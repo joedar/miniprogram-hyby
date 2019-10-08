@@ -1,0 +1,23 @@
+/**index.wxss**/
+.banner-swiper {
+  height: 600rpx;
+}
+.banner-swiper swiper-item {
+  height: 100%;
+}
+.banner-swiper swiper-item > image {
+  height: 100%;
+  width: 100%;
+}
+
+
+.iconbuttons {padding: 30rpx 0;}
+.iconbuttons > .box {display: -webkit-flex;}
+.iconbuttons > .box > .item {flex: 1; text-align: center;}
+.iconbuttons > .box > .item > icon {display: table; margin: 0 auto; width: 60rpx; height: 60rpx; contain: ""; margin-bottom: 10rpx;}
+.iconbuttons > .box > .item > icon.miaosha {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/xianshimiaosha.png) no-repeat; background-size: 100% auto;}
+.iconbuttons > .box > .item > icon.temai {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/temai.png) no-repeat; background-size: 100% auto;}
+.iconbuttons > .box > .item > icon.dingzhi {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/dingzhi.png) no-repeat; background-size: 100% auto;}
+.iconbuttons > .box > .item > icon.more {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/more.png) no-repeat; background-size: 100% auto;}
+.iconbuttons > .box > .item > text {font-size: 85%;}
+

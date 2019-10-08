@@ -1,0 +1,25 @@
+<!--pages/diary/list/list.wxml-->
+
+<navigator class="add" url="/pages/diary/add/add">
+  <view class="icon"></view>
+</navigator>
+
+<view class="textList" wx:if="{{list.length}}">
+  <view class="ul">
+    <view class="li" wx:for="{{list}}" wx:key="{{item.id}}">
+      <view class="item" data-id="{{item.id}}" bind:longpress="longpress" bindtap="diaryClick">
+        <view>
+          <view class="title">{{ item.title }}</view>
+          <view class="date">{{ item.createDate }}</view>
+        </view>
+        <view>
+          <view class="arrow"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="noTextList" wx:else>
+  <text>暂无随心日记</text>
+</view>

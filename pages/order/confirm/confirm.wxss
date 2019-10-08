@@ -1,0 +1,42 @@
+/* pages/order/confirm/confirm.wxss */
+
+.ADDRESSEE {display: -webkit-flex; display: flex; justify-content: space-between; align-items: center;}
+.ADDRESSEE > view:nth-of-type(2) {margin: 0 20rpx;}
+.ADDRESSEE > view > .icon-addr {width: 60rpx; height: 60rpx; background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/address.png) no-repeat; background-size: 100% auto;}
+.ADDRESSEE > view > .icon-arrow {width: 35rpx; height: 40rpx; background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/arrow-right.png) no-repeat; background-size: auto 100%; opacity: .5;}
+.ADDRESSEE > view:nth-of-type(2) > view > view {margin-top: 20rpx;}
+.ADDRESSEE > view:nth-of-type(2) > view > view:first-child {margin-top: 0;}
+.ADDRESSEE .name {font-size: 120%;}
+.ADDRESSEE .mobile {margin-left: 15rpx; font-size: 95%; opacity: .8;}
+.ADDRESSEE .addr {font-size: 95%;}
+
+
+
+.ORDERS .ITEM-LIST .item {border-bottom: 1px #eee solid; padding-bottom: 20rpx; margin-bottom: 20rpx;}
+.ORDERS .ITEM-LIST .item {display: -webkit-flex; display: flex; justify-content: start;}
+.ORDERS .ITEM-LIST .item > view:nth-of-type(2) {margin: 0 15rpx;}
+.ORDERS .ITEM-LIST .item .image image {width: 180rpx; height: 180rpx;}
+.ORDERS .ITEM-LIST .item .total {width: 120rpx; text-align: right;}
+.ORDERS .ITEM-LIST .item .total .price {color: #e50012;}
+.ORDERS .ITEM-LIST .item .total .count {font-size: 95%; opacity: .6; white-space: nowrap;}
+.ORDERS .ITEM-LIST .item .attrs .title {display: -webkit-box; display: box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}
+.ORDERS .ITEM-LIST .item .attrs .title {font-size: 95%;}
+.ORDERS .ITEM-LIST .item .attrs .sku {margin-top: 15rpx; padding: 6rpx; background: #f3f3f3; color: #999; font-size: 95%;}
+
+.ORDERS .INFOS > view {margin-top: 30rpx; display: -webkit-flex; display: flex;}
+.ORDERS .INFOS > view {justify-content: space-between}
+.ORDERS .INFOS > view > view:nth-of-type(1) {width: 26%; text-align: right;}
+.ORDERS .INFOS > view > view:nth-of-type(2) {width: 70%; text-align: left;}
+.ORDERS .INFOS > view > view:nth-of-type(2) > text {opacity: .5;}
+.ORDERS .INFOS > view > view:nth-of-type(2) > textarea {width: 100%;}
+
+
+.SUBMITORDER {height: 100%; display: -webkit-flex; display: flex;}
+.SUBMITORDER {justify-content: flex-end; align-items: center;}
+.SUBMITORDER > view {margin-left: 20rpx;}
+.SUBMITORDER .totalCount {opacity: .7;}
+.SUBMITORDER .totalPrice {font-size: 120%; color: #e50012; font-weight: bold;}
+.SUBMITORDER .submitBtn {height: 70rpx; line-height: 70rpx; border-radius: 35rpx; padding: 0 25rpx;}
+.SUBMITORDER .submitBtn {background: #e50012; color: white;}
+.SUBMITORDER .submitBtn > text {font-size: 95%;}
+

@@ -1,0 +1,97 @@
+<!--pages/order/confirm/confirm.wxml-->
+
+<!-- <view wx:for="{{ itemList }}" wx:key="{{ item.id }}">
+  <view>{{item.id}}</view>
+</view> -->
+
+<view class="PUBLICONTAINER">
+
+  <!-- 收货人信息 -->
+  <view class="CON">
+    <navigator class="ADDRESSEE" url="/pages/ucenter/addressee/addressee">
+      <view>
+        <view class="icon-addr"></view>
+      </view>
+      <view>
+        <view>
+          <view>
+            <text class="name">迪丽热巴</text>
+            <text class="mobile">13800138000</text>
+          </view>
+          <view>
+            <text class="addr">新疆维吾尔自治区克拉玛依市克拉玛依区胜利小区红星路16号5楼</text>
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="icon-arrow"></view>
+      </view>
+    </navigator>
+  </view>
+
+  <!-- 订单产品列表 -->
+  <view class="CON">
+    <!-- 订单 -->
+    <view class="ORDERS">
+
+      <!-- item列表 -->
+      <view class="ITEM-LIST">
+
+        <view class="item" wx:for="{{itemList}}" wx:key="{{item.id}}">
+          <view class="image">
+            <image mode="aspectFill" src="{{ item.image }}" />
+          </view>
+          <view class="attrs">
+            <view class="title">{{ item.title }}</view>
+            <view class="sku">{{ item.color }}</view>
+          </view>
+          <view class="total">
+            <view class="price">￥{{ item.zkPrice }}</view>
+            <view class="count">× {{ item.count }}</view>
+          </view>
+        </view>
+
+      </view>
+
+      <!-- 订单信息 -->
+      <view class="INFOS">
+        <view>
+          <view class="tit">配送方式</view>
+          <view class="con"><text>普通快递</text></view>
+        </view>
+        <view>
+          <view class="tit">配送费</view>
+          <view class="con"><text>15元</text></view>
+        </view>
+        <view>
+          <view class="tit">订单备注</view>
+          <view class="con">
+            <textarea bindblur="bindTextAreaBlur" auto-height placeholder="选填，请先与商家协商一致" />
+          </view>
+        </view>
+      </view>
+
+      <!-- 小计 -->
+      <view class="TOTALS">
+      
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 订单信息 -->
+  <view class="CON">
+    <view class="ORDER-INFO">
+      ORDER-ITEM-LIST
+    </view>
+  </view>
+
+</view>
+
+<fixed-bottom>
+  <view class="SUBMITORDER">
+    <view class="totalCount"><text class="totalCount">共1件</text></view>
+    <view>合计:￥<text class="totalPrice">86.00</text></view>
+    <view class="submitBtn"><text>提交订单</text></view>
+  </view>
+</fixed-bottom>

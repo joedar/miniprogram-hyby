@@ -1,0 +1,15 @@
+/* pages/news/detail/detail.wxss */
+
+.newsDetail {padding: 20rpx; background: #fff;}
+.news-title > text {font-size: 135%; font-weight: bold; line-height: 60rpx;}
+.news-date {margin: 25rpx 0; opacity: .6;}
+
+.news-content {margin-top: 10rpx; border-top: 1px #ddd solid; padding-top: 35rpx;}
+.news-content > .content {font-size: 105%; line-height: 55rpx;}
+.news-content > .content image {margin-top: 25rpx; width: 100%;}
+
+.imagesTxt {width: 100%;}
+.imagesTxt > img {width: 100%;}
+.imagesTxt > div {padding: 10rpx; text-align: center; opacity: .6;}
+
+

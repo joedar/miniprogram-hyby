@@ -1,0 +1,13 @@
+/* pages/diary/add/add.wxss */
+
+.contain {padding: 20rpx; background: #fff;}
+.contain .border {border:1px #ddd solid; border-radius: 6rpx;}
+
+
+
+
+
+
+
+
+

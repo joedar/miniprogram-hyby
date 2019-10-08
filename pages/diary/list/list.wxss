@@ -1,0 +1,17 @@
+/* pages/diary/list/list.wxss */
+
+.textList > .ul > .li {background: #fff; padding: 36rpx; margin-bottom: 1px;}
+.textList .item {display: -webkit-flex; display: flex; justify-content: space-between; align-items: center;}
+.textList .item > view:first-child {width: 90%;}
+.textList .item .title {font-size: 110%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.textList .item .date {font-size: 90%; opacity: .4; margin-top: 14rpx;}
+.textList .item .arrow {width: 30rpx; height: 30rpx; right: 25rpx; opacity: .5;}
+.textList .item .arrow {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/arrow-right.png) no-repeat; background-size: 100% auto;}
+
+.noTextList {height: 400rpx; line-height: 400rpx; text-align: center; opacity: .7}
+
+.add {position: fixed; right: 30rpx; bottom: 30rpx;}
+.add {width: 110rpx; height: 110rpx; border-radius: 50%; overflow: hidden; background: rgba(138,43,226, .25);}
+.add {display: -webkit-flex; display: flex; justify-content: center; align-items: center}
+.add > .icon {width: 60rpx; height: 60rpx; background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/write.png) no-repeat; background-size: 100% auto;}
+

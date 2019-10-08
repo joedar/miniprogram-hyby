@@ -1,0 +1,18 @@
+<!--pages/diary/modify/modify.wxml-->
+<view class="FORM">
+  <view class="part">
+    <view class="name"><text>日记标题</text></view>
+    <view class="con">
+      <input class="border" value="{{ title }}" placeholder="请输入标题，30字以内" bindinput="diaryTitleInput" />
+    </view>
+  </view>
+  <view class="part">
+    <view class="name"><text>日记内容</text></view>
+    <view class="con">
+      <textarea class="border" value="{{ content }}" placeholder="请输入日记的内容，1000字以内" bindinput="diaryContentInput" />
+    </view>
+  </view>
+  <view class="part">
+    <button type="primary" bindtap="SUBMITCLICK">提交</button>
+  </view>
+</view>

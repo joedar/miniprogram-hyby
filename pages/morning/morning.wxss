@@ -1,0 +1,37 @@
+/* pages/morning/morning.wxss */
+page {height: 100%;}
+.MORNING {height: 100%; position: relative;}
+.MORNING.day00 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/00.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day01 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/01.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day02 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/02.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day03 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/03.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day04 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/04.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day05 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/05.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day06 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/06.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day07 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/07.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day08 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/08.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day09 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/09.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day10 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/10.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day11 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/11.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day12 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/12.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day13 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/13.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day14 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/14.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day15 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/15.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day16 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/16.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day17 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/17.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day18 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/18.jpg) no-repeat; background-size: 100% auto;}
+.MORNING.day19 {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/morning/19.jpg) no-repeat; background-size: 100% auto;}
+
+.MORNING > .records {position: absolute; top: 20rpx; right: 20rpx; background: rgba(0, 0, 0, .75); color: #fff;}
+.MORNING > .records {height: 90rpx; border-radius: 45rpx; padding: 0 30rpx; display: -webkit-flex;}
+.MORNING > .records > view {display: -webkit-flex; align-items: center;}
+.MORNING > .records > .days {font-size: 160%; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+.MORNING > .records > .record {font-size: 90%; padding-left: 10rpx;}
+
+.MORNING > .recordStatus {position: absolute; width: 90%; bottom: 120rpx; text-align: center; left: 50%; transform: translateX(-50%)}
+.MORNING > .recordStatus > .status > .big {font-size: 200%; font-weight: bold; color: white; text-shadow: 0 0 20rpx #111; margin-bottom: 15rpx;}
+.MORNING > .recordStatus > .status > .small {font-size: 120%; color: white; text-shadow: 0 0 10rpx #000; margin-bottom: 30rpx;}
+
+.MORNING > .recordStatus > .viewMore {width: 100%; height: 90rpx; line-height: 90rpx;}
+.MORNING > .recordStatus > .viewMore {background: rgba(0, 0, 0, 0.5); border: 1px rgb(0, 0, 0) solid; border-radius: 8rpx;}
+.MORNING > .recordStatus > .viewMore {color: white; font-size: 100%;}

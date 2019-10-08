@@ -1,0 +1,31 @@
+/* components/morning/morning.wxss */
+/* .MORNING {padding: 15rpx; background: white;}
+.MORNING > .box {display: -webkit-box;}
+.MORNING > .box > .flex > .con {height: 120rpx; }
+.MORNING > .box > .flex.left {width: 60%;}
+.MORNING > .box > .flex.right {width: 40%;}
+.MORNING > .box > .flex.left > .con {background: #e50012; color: white; border-top-left-radius: 60rpx; border-bottom-left-radius: 60rpx;}
+.MORNING > .box > .flex.left > .con {position: relative;}
+.MORNING > .box > .flex.left > .con > view {position: absolute;}
+.MORNING > .box > .flex.left > .con > view.title {left: 95rpx;}
+.MORNING > .box > .flex.left > .con > view.title.big {top: 20rpx; font-size: 44rpx; font-weight: bold;}
+.MORNING > .box > .flex.left > .con > view.title.sub {bottom: 22rpx; font-size: 28rpx;}
+.MORNING > .box > .flex.left > .con > view.icon {width: 70rpx; height: 70rpx; left: 20rpx; top: 50%; transform: translateY(-50%);}
+.MORNING > .box > .flex.left > .con > view.icon {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/icon/icon-white-sun.png) no-repeat; background-size: 100% auto;}
+.MORNING > .box > .flex.right > .con {display: -webkit-flex; align-items: center; justify-content: center;}
+.MORNING > .box > .flex.right > .con > .recordNum {font-size: 170%; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+.MORNING > .box > .flex.right > .con > .recordType {font-size: 90%; padding-left: 10rpx;}
+.MORNING > .box > .flex.right > .con {background: rgba(229, 1, 18, .25); color: black; border-top-right-radius: 60rpx; border-bottom-right-radius: 60rpx;} */
+
+.MORNING {padding: 20rpx; background: white;}
+.MORNING > .box {height: 150rpx; position: relative; border-radius: 16rpx;}
+.MORNING > .box {background: url(https://hybyapi.wwwj.com.cn/MINIPROGRAM/images/index-morning-bg.jpg) center no-repeat; background-size: 100% auto;}
+.MORNING > .box > view {position: absolute; color: #fff;}
+.MORNING > .box > .title {left: 70rpx; text-shadow: 0 0 15rpx #000;}
+.MORNING > .box > .records {right: 30rpx;}
+.MORNING > .box > .title.big {bottom: 45%; font-weight: bold; font-size: 170%;}
+.MORNING > .box > .title.sub {top: 55%;}
+.MORNING > .box > .records {top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%);}
+.MORNING > .box > .records > view {display: table; margin: 0 auto;}
+.MORNING > .box > .records > .count {font-weight: bold; font-size: 230%;}
+.MORNING > .box > .records > .type {font-size: 90%;}

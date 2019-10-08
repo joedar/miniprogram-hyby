@@ -1,0 +1,18 @@
+<!--pages/morning/morning.wxml-->
+<view class="MORNING {{ days }}">
+  <!-- 右上角的显示打卡天数 -->
+  <view class="records">
+    <view class="days">{{ totalCount }}</view>
+    <view class="record">累计打卡</view>
+  </view>
+
+  <view class="recordStatus">
+    <view class="status">
+      <view class="big">{{ status.big }}</view>
+      <view class="small">{{ status.small }}</view>
+    </view>
+    <navigator class="viewMore" url="/pages/morning-list/morning-list">
+      查看打卡记录详情
+    </navigator>
+  </view>
+</view>

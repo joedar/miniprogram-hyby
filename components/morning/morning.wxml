@@ -1,0 +1,29 @@
+<!--components/morning/morning.wxml-->
+<!-- <view class="MORNING">
+  <view class="box">
+    <view class="flex left">
+      <view class="con">
+        <view class="title big">早起打卡 9:00</view>
+        <view class="title sub">定一个小目标，坚持去完成</view>
+        <view class="icon"></view>
+      </view>
+    </view>
+    <view class="flex right">
+      <view class="con">
+        <view class="recordNum">{{ totalCount }}</view>
+        <view class="recordType">{{ recordType }}</view>
+      </view>
+    </view>
+  </view>
+</view> -->
+
+<view class="MORNING">
+  <view class="box">
+    <view class="title big">早起打卡 9:00</view>
+    <view class="title sub">定一个小目标，坚持去完成</view>
+    <view class="records">
+      <view class="count">{{ totalCount }}</view>
+      <view class="type">{{ recordType }}</view>
+    </view>
+  </view>
+</view>

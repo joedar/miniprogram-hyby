@@ -1,0 +1,13 @@
+/* pages/diary/detail/detail.wxss */
+
+page {height: 100%; background: #fff;}
+
+.diaryDetail {padding: 20rpx;}
+.diaryDetail .title {margin-bottom: 10rpx;}
+.diaryDetail .title text {font-size: 130%;}
+
+.diaryDetail .date {margin-top: 30rpx; margin-bottom: 40rpx;}
+.diaryDetail .date text {font-size: 95%; opacity: .7;}
+
+.diaryDetail .content {line-height: 50rpx;}
+.diaryDetail .content text {font-size: 110%;}

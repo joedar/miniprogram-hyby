@@ -1,0 +1,6 @@
+<!--pages/diary/detail/detail.wxml-->
+<view class="diaryDetail">
+  <view class="title"><text>{{ detail.title }}</text></view>
+  <view class="date"><text>{{ detail.createDate }}</text></view>
+  <view class="content"><text>{{ detail.content }}</text></view>
+</view>

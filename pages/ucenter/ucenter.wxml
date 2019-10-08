@@ -1,0 +1,82 @@
+<!--pages/ucenter/ucenter.wxml-->
+<view class="USERINFO">
+  <view class="abs avatar"><open-data type="userAvatarUrl"></open-data></view>
+  <view class="abs txt nickName"><open-data lang="zh_CN" type="userNickName"></open-data></view>
+  <view class="abs txt area">
+    <text>故乡：</text>
+    <open-data lang="zh_CN" type="userCountry"></open-data>
+    -
+    <open-data lang="zh_CN" type="userProvince"></open-data>
+  </view>
+  <view class="abs profile">完善资料</view>
+</view>
+
+<view class="MENULIST">
+  <block wx:if="{{USERINFO}}">
+    <button class="menu" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+      <view class="icon auth"></view>
+      <view class="arrow"></view>
+      <view class="name">授权登录</view>
+      <view class="info">获得您的公开信息</view>
+    </button>
+  </block>
+  <view class="menu" bindtap="openSetting">
+    <view class="icon setting"></view>
+    <view class="arrow"></view>
+    <view class="name">设置我的授权</view>
+    <view class="info">用户信息、地理位置等</view>
+  </view>
+</view>
+
+<view class="MENULIST">
+  <navigator class="menu" url="/pages/morning-list/morning-list">
+    <view class="icon record"></view>
+    <view class="arrow"></view>
+    <view class="name">早起打卡记录</view>
+    <view class="info">定一个小目标</view>
+  </navigator>
+  <view class="menu">
+    <view class="icon profile"></view>
+    <view class="arrow"></view>
+    <view class="name">个人资料</view>
+  </view>
+  <navigator class="menu" url="/pages/diary/list/list">
+    <view class="icon diary"></view>
+    <view class="arrow"></view>
+    <view class="name">我的日记</view>
+  </navigator>
+</view>
+
+<view class="MENULIST" style="display: none;">
+  <navigator class="menu" url="/pages/order/list/list">
+    <view class="icon order"></view>
+    <view class="arrow"></view>
+    <view class="name">订单</view>
+  </navigator>
+  <navigator class="menu" url="/pages/ucenter/addressee/addressee">
+    <view class="icon address"></view>
+    <view class="arrow"></view>
+    <view class="name">收货地址</view>
+  </navigator>
+  <view class="menu">
+    <view class="icon notice"></view>
+    <view class="arrow"></view>
+    <view class="name">系统通知</view>
+  </view>
+  <view class="menu">
+    <view class="icon jifen"></view>
+    <view class="arrow"></view>
+    <view class="name">积分</view>
+  </view>
+  <view class="menu">
+    <view class="icon coupon"></view>
+    <view class="arrow"></view>
+    <view class="name">优惠券</view>
+  </view>
+  <view class="menu">
+    <view class="icon card"></view>
+    <view class="arrow"></view>
+    <view class="name">会员卡</view>
+  </view>
+</view>
+

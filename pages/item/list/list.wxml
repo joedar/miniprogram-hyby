@@ -1,0 +1,65 @@
+<!--pages/item/list/list.wxml-->
+
+<view style="display: none;">
+  <block wx:for="{{dataList}}" wx:key="{{item.id}}">
+    <image
+      src="{{item.image}}"
+      id="{{item.id}}"
+      data-id="{{item.id}}"
+      data-title="{{item.title}}"
+      data-image="{{item.image}}"
+      mode="widthFix"
+      bindload="onImageLoad"
+    ></image>
+  </block>
+</view>
+
+
+<view class="SECTION">
+  <view class="HEAD">
+    <view class="title">所有商品</view>
+  </view>
+  <view class="BODY">
+
+    <view class="ITEMLIST">
+      <view class="row" wx:for="{{list}}" wx:key="index">
+        <view class="item" wx:for="{{item}}" wx:for-index="idx" wx:for-item="items" wx:key="items">
+          <image src="{{items.image}}" mode="widthFix"></image>
+          <view class="txt">
+            <view class="discounts clearfix" wx:if="{{false}}" data-if="items.discountType">
+              <block wx:for="{{items.discountType}}" wx:for-index="idx" wx:for-items="discount" wx:key="discount">
+              <view class="{{discount}}"></view>
+              </block>
+            </view>
+            <view class="title">{{items.title}}</view>
+            <!-- <view class="prices">
+              <view class="price"><text>￥</text><text>{{items.zkPrice}}</text></view>
+              <view class="btn"><text>查看详情</text></view>
+            </view> -->
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- <view class="ITEMLIST">
+      <block wx:for="{{list}}" wx:key="{{item.id}}">
+      <view class="item" data-id="{{item.id}}" bindtap="itemClick">
+        <image src="{{item.image}}" mode="widthFix"></image>
+        <view class="txt">
+          <view class="discounts clearfix" wx:if="{{false}}" data-if="item.discountType">
+            <block wx:for="{{item.discountType}}" wx:for-index="idx" wx:for-item="discount" wx:key="discount">
+            <view class="{{discount}}"></view>
+            </block>
+          </view>
+          <view class="title">{{item.id}} - {{item.title}}</view>
+          <view class="prices">
+            <view class="price"><text>￥</text><text>{{item.zkPrice}}</text></view>
+            <view class="btn"><text>查看详情</text></view>
+          </view>
+        </view>
+      </view>
+      </block>
+    </view> -->
+    
+  </view>
+</view>

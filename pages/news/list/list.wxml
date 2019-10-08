@@ -1,0 +1,20 @@
+<!--pages/news/list/list.wxml-->
+<view class="newsList" wx:if="{{list.length}}">
+  <view class="news" wx:for="{{list}}" wx:key="{{item.id}}" data-id="{{item.id}}" bindtap="newsClick">
+    <view class="titles{{item.imageType === 'big' ? ' big' : ''}}">
+      <view class="text">
+        <view class="title"><text>{{ item.title }}</text></view>
+      </view>
+      <view class="image" wx:if="{{item.imageType !== 'none' || item.image}}">
+        <image class="img" src="{{item.image}}" mode="aspectFill"></image>
+      </view>
+    </view>
+    <view class="date">
+      <text>{{ item.createDate }}</text>
+    </view>
+  </view>
+</view>
+
+<view class="noTextList" wx:else>
+  <text>暂无新闻</text>
+</view>

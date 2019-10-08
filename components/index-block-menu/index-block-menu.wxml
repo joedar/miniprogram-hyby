@@ -1,0 +1,25 @@
+<!--components/index-block-menu/index-block-menu.wxml-->
+<view class="block-menu">
+  <view class="menus">
+    <navigator class="box" url="/pages/item/list/list">
+      <view class="con">
+        <view class="ms item">产品列表</view>
+      </view>
+    </navigator>
+    <navigator class="box" url="/pages/news/list/list">
+      <view class="con">
+        <view class="ms news">好运新闻</view>
+      </view>
+    </navigator>
+    <navigator class="box" url="/pages/diary/list/list">
+      <view class="con">
+        <view class="ms diary">随心日记</view>
+      </view>
+    </navigator>
+    <navigator class="box" url="/pages/promotion/promotion">
+      <view class="con">
+        <view class="ms cuxiao">促销活动</view>
+      </view>
+    </navigator>
+  </view>
+</view>

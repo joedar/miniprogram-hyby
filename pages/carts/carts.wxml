@@ -1,0 +1,82 @@
+<!--pages/carts/carts.wxml-->
+
+<view class="CART TOP">
+  <view class="box">
+    <view bindtap="manageClick">
+      <view wx:if="{{ managed }}">完成</view>
+      <view wx:else>管理</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class="CART LIST">
+
+  <view class="item" wx:for="{{cartList}}" wx:key="{{item.id}}">
+    <checkbox-group class="checkbox" bindchange="checkboxClick" data-id="{{item.id}}" data-price="{{item.price}}">
+      <label>
+        <checkbox value="{{item.id}}" />
+        <view class="icon">
+          <icon size="24" type="success" color="rgb(229,1,18)" wx:if="{{ item.checked }}"></icon>
+        </view>
+      </label>
+    </checkbox-group>
+    <view class="image">
+      <image mode="aspectFill" src="{{ item.image }}" />
+    </view>
+    <view class="cons">
+      <view class="title">{{item.title}}</view>
+      <view class="sku">
+        <text>{{ item.color }}</text>
+      </view>
+      <!-- <view class="discounts clearfix" wx:if="{{ item.discountType }}">
+        <view wx:for="{{item.discountType}}" wx:for-index="idx" wx:for-item="discounts" wx:key="idx" class="{{discounts}}"></view>
+      </view> -->
+      <view class="item-price">
+        <!-- 左边价格 -->
+        <view>
+          <text class="price">￥{{ item.zkPrice }}</text>
+        </view>
+        <!-- 右边数量 -->
+        <view>
+          <view data-type="less" data-id="{{item.id}}" catchtap="countClick">
+            <text>-</text>
+          </view>
+          <view>
+            <input value="{{ item.count }}" />
+          </view>
+          <view data-type="plus" data-id="{{item.id}}" catchtap="countClick">
+            <text>+</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<fixed-bottom>
+  <view class="CART BOTTOM">
+    <checkbox-group class="checkbox select-all" bindchange="selectAllChange">
+      <label>
+        <checkbox value="true" checked="{{selectAllChecked}}" />
+        <view class="icon">
+          <icon size="24" type="success" color="rgb(229,1,18)" wx:if="{{ selectAllChecked }}"></icon>
+        </view>
+        <view class="txt">全选</view>
+      </label>
+    </checkbox-group>
+    <view class="operates" wx:if="{{ !managed }}">
+      <view class="total">合计:￥<text>{{ totalPrice }}</text></view>
+      <view class="btn order" bindtap="orderClick"><text>结算</text></view>
+    </view>
+    <view class="operates" wx:else>
+      <view class="btn delete" bindtap="deleteClick"><text>删除</text></view>
+    </view>
+  </view>
+</fixed-bottom>
+
+

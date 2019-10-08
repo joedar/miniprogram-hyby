@@ -1,0 +1,6 @@
+<!--components/fixed-bottom/fixed-bottom.wxml-->
+<view class="bottom">
+  <view class="fixed">
+    <slot />
+  </view>
+</view>

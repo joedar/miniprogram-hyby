@@ -1,0 +1,15 @@
+<!--pages/news/detail/detail.wxml-->
+
+<view class="newsDetail">
+  <view class="news-title"><text>{{ title }}</text></view>
+  <view class="news-date"><text>{{ createDate }}</text></view>
+  <view class="news-content">
+    <view class="content">
+      <rich-text nodes="{{ content }}"></rich-text>
+    </view>
+  </view>
+</view>
+
+
+
+

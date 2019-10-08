@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "fixed-bottom": "/components/fixed-bottom/fixed-bottom"
+  },
+  "navigationBarTitleText": "产品详情"
+}

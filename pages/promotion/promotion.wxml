@@ -1,0 +1,2 @@
+<!--pages/promotion/promotion.wxml-->
+<web-view src="https://prom.haoyunbuyi.com/"></web-view>

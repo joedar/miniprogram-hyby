@@ -1,0 +1,48 @@
+/* pages/carts/carts.wxss */
+
+.CART.TOP {height: 60rpx;}
+.CART.TOP > .box {position: fixed; z-index: 2; height: 60rpx; width: 100%; line-height: 60rpx; background: #e50012; color: white; padding: 0 20rpx;}
+
+.checkbox > label {display: -webkit-flex; display: flex; align-items: center;}
+.checkbox > label > checkbox {position: absolute; left: -9999px;}
+.checkbox > label > .icon {position: relative; width: 46rpx; height: 46rpx; border: 1rpx #ddd solid; border-radius: 50%;}
+.checkbox > label > .icon > icon {position: absolute; left: -1px; top: -1px;}
+.checkbox > label > .txt {padding-left: 10rpx;}
+
+.CART.LIST {padding: 20rpx;}
+.CART.LIST > .item {position: relative; padding: 20rpx 30rpx; margin-bottom: 30rpx; background: white; border-radius: 8rpx; overflow: hidden;}
+.CART.LIST > .item > .checkbox,
+.CART.LIST > .item > .image {position: absolute;}
+/*----- 左侧的选择checkbox -----*/
+.CART.LIST > .item > .checkbox {left: 30rpx; top: 100rpx; transform: translateY(-50%)}
+
+/*----- 中间的图片 -----*/
+.CART.LIST > .item > .image {left: 110rpx;}
+.CART.LIST > .item > .image > image {width: 200rpx; height: 200rpx; border-radius: 10rpx;}
+/*----- 右侧的内容 -----*/
+.CART.LIST > .item > .cons {margin-left: 300rpx; min-height: 200rpx;}
+/*-- 标题 --*/
+.CART.LIST > .item > .cons > .title {display: -webkit-box; display: box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;}
+.CART.LIST > .item > .cons > .title {font-size: 95%; line-height: 40rpx;}
+/*-- SKU --*/
+.CART.LIST > .item > .cons > .sku {font-size: 92%; margin-top: 15rpx; background: #f6f6f6; padding: 15rpx 20rpx; color: #999;}
+
+.CART.LIST > .item > .cons > .discounts > view {float: left; margin-top: 15rpx; margin-right: 15rpx;}
+
+.CART.LIST > .item > .cons > .item-price {margin-top: 15rpx;}
+.CART.LIST > .item > .cons > .item-price {display: -webkit-flex; display: flex; justify-content: space-between;}
+.CART.LIST > .item > .cons > .item-price > view:nth-of-type(2) {display: -webkit-flex; display: flex;}
+.CART.LIST > .item > .cons > .item-price > view:nth-of-type(2) {width: 50%; border: 1px #ddd solid; border-radius: 6rpx; overflow: hidden;}
+.CART.LIST > .item > .cons > .item-price > view:nth-of-type(2) > view {flex: 1; text-align: center;}
+.CART.LIST > .item > .cons > .item-price > view:nth-of-type(2) > view > text {font-size: 110%; color: #ddd;}
+.CART.LIST > .item > .cons > .item-price > view:nth-of-type(2) > view:nth-of-type(2) {flex: 2; outline: 1px #ddd solid;}
+.CART.LIST > .item > .cons > .item-price > view:nth-of-type(2) > view:nth-of-type(2) > input {font-size: 80%;}
+
+
+.CART.BOTTOM {height: 100%;}
+.CART.BOTTOM {display: -webkit-flex; display: flex; justify-content: space-between; align-items: center;}
+.CART.BOTTOM > .operates {display: -webkit-flex; display: flex; align-items: center;}
+.CART.BOTTOM > .operates > .total {padding-right: 20rpx;}
+.CART.BOTTOM > .operates > .total > text {color: #e50012; font-size: 110%;}
+.CART.BOTTOM > .operates > .btn {height: 60rpx; line-height: 60rpx; background: #e50012; color: white; border-radius: 30rpx; padding: 0 30rpx;}
+.CART.BOTTOM > .operates > .btn > text {font-size: 90%;}

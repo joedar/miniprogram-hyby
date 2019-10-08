@@ -1,0 +1,6 @@
+/* components/fixed-bottom/fixed-bottom.wxss */
+.bottom {height: 80rpx;}
+.bottom > .fixed {position: fixed; height: 80rpx; left: 0; bottom: 0; background: rgba(255, 255, 255, .95); box-shadow: 0 0 12rpx rgb(225, 225, 225);}
+.bottom > .fixed {z-index: 2;}
+.bottom > .fixed {width: 94%; padding: 0 3%;}
+
